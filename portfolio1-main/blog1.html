@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding OOP Concepts in Java</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            background-color: #1e2167;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav .left {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        header nav .right ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav .right ul li {
+            margin-left: 20px;
+        }
+        header nav .right ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        header nav .right ul li a:hover {
+            color: #9c97f1;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background-color: white;
+        }
+        h1, h2, h3 {
+            color: #1e2167;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ritika's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Understanding Object-Oriented Programming (OOP) in Java</h1>
+
+        <p>Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data in the form of fields (also known as attributes or properties), and code in the form of procedures (often known as methods).</p>
+
+        <h2>Why Use OOP?</h2>
+        <p>OOP promotes greater flexibility and maintainability in programming. It allows code to be reused and organized more effectively. Java is a fully object-oriented language and is designed to help developers build robust and scalable applications using OOP principles.</p>
+
+        <h2>Core Concepts of OOP</h2>
+
+        <h3>1. Class</h3>
+        <p>A class is a blueprint for creating objects. It defines a datatype by bundling data and methods that work on the data into one single unit.</p>
+
+        <pre><code>public class Car {
+    String color;
+    int speed;
+
+    void drive() {
+        System.out.println("Car is driving");
+    }
+}</code></pre>
+
+        <h3>2. Object</h3>
+        <p>An object is an instance of a class. It is the actual entity that performs actions and has properties defined by the class.</p>
+
+        <pre><code>Car myCar = new Car();</code></pre>
+
+        <h3>3. Inheritance</h3>
+        <p>Inheritance is a mechanism where one class acquires the properties (fields) and behaviors (methods) of a parent class.</p>
+
+        <pre><code>class Animal {
+    void eat() {
+        System.out.println("This animal eats food");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog barks");
+    }
+}</code></pre>
+
+        <h3>4. Polymorphism</h3>
+        <p>Polymorphism allows us to perform a single action in different ways. In Java, it can be achieved through method overloading and overriding.</p>
+
+        <h4>Method Overloading:</h4>
+        <pre><code>class MathUtils {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+}</code></pre>
+
+        <h4>Method Overriding:</h4>
+        <pre><code>class Animal {
+    void sound() {
+        System.out.println("Animal makes sound");
+    }
+}
+
+class Cat extends Animal {
+    void sound() {
+        System.out.println("Cat meows");
+    }
+}</code></pre>
+
+        <h3>5. Encapsulation</h3>
+        <p>Encapsulation is the wrapping up of data and code into a single unit. It helps to protect the data from unauthorized access using access modifiers like private, public, protected.</p>
+
+        <pre><code>class Student {
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}</code></pre>
+
+        <h3>6. Abstraction</h3>
+        <p>Abstraction is the concept of hiding internal implementation details and showing only functionality to the user. It is achieved using abstract classes or interfaces in Java.</p>
+
+        <pre><code>abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+}</code></pre>
+
+        <h2>Conclusion</h2>
+        <p>OOP is a powerful way to structure your code and build scalable applications. Java's OOP-centric approach makes it easier for developers to build modular, flexible, and maintainable software systems. Mastering the core concepts like classes, objects, inheritance, polymorphism, encapsulation, and abstraction is essential for any aspiring Java developer.</p>
+    </div>
+</body>
+</html>

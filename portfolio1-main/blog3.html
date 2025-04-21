@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 5 Machine Learning Algorithms</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+    .blog-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .blog-post h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+    .blog-post h2 {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+      color: #007BFF;
+    }
+    .blog-post p {
+      margin-bottom: 1rem;
+    }
+    .footer {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .footer-second ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-second ul li {
+      margin-bottom: 0.5rem;
+    }
+    .footer-rights {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+    code {
+      background-color: #f1f1f1;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">Ritika's Blog</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="blog-container">
+    <article class="blog-post">
+      <h1>Top 5 Machine Learning Algorithms You Should Know</h1>
+      <p>
+        Machine Learning is an essential part of Artificial Intelligence that empowers computers to learn from data without explicit programming. With the rise of data and computational power, ML algorithms have become vital tools across industries. In this blog, we explore five fundamental machine learning algorithms that you should know, along with their applications and working principles.
+      </p>
+
+      <h2>1. Linear Regression</h2>
+      <p>
+        Linear Regression models the relationship between a dependent variable and one or more independent variables using a straight line. The goal is to minimize the error between predicted and actual values by fitting the best possible line.
+      </p>
+      <p>
+        The formula used is: <code>Y = mX + c</code>, where <code>Y</code> is the predicted value, <code>m</code> is the slope, and <code>c</code> is the intercept.
+      </p>
+      <p><strong>Use Cases:</strong> Real estate price prediction, stock market forecasting, sales prediction.</p>
+      <p><strong>Advantages:</strong> Easy to implement, interpretable results, efficient for small datasets.</p>
+      <p><strong>Limitations:</strong> Assumes linearity, sensitive to outliers.</p>
+
+      <h2>2. Logistic Regression</h2>
+      <p>
+        Logistic Regression is a classification algorithm that estimates probabilities using a logistic (sigmoid) function. It outputs a value between 0 and 1, which is interpreted as the probability of belonging to a class.
+      </p>
+      <p>
+        It is particularly useful for binary classification tasks. The decision boundary is determined using the log-odds of the probability.
+      </p>
+      <p><strong>Use Cases:</strong> Email spam detection, disease diagnosis, customer churn prediction.</p>
+      <p><strong>Advantages:</strong> Simple, fast, works well with linearly separable classes.</p>
+      <p><strong>Limitations:</strong> Not suitable for complex relationships, prone to underfitting.</p>
+
+      <h2>3. Decision Trees</h2>
+      <p>
+        Decision Trees are hierarchical models that split the dataset into branches based on feature values. Each node represents a decision based on a feature, and each leaf represents an outcome.
+      </p>
+      <p>
+        Decision Trees use algorithms like ID3, C4.5, or CART to build the tree. Pruning techniques are often applied to reduce overfitting.
+      </p>
+      <p><strong>Use Cases:</strong> Loan approval, customer segmentation, risk analysis.</p>
+      <p><strong>Advantages:</strong> Easy to interpret, handles categorical and numerical data, requires little data preparation.</p>
+      <p><strong>Limitations:</strong> Prone to overfitting, unstable with small changes in data.</p>
+
+      <h2>4. K-Nearest Neighbors (KNN)</h2>
+      <p>
+        KNN is a lazy learning algorithm that classifies a new point based on the 'k' closest data points. Distance metrics such as Euclidean or Manhattan are used to identify neighbors.
+      </p>
+      <p>
+        KNN does not involve any training phase and stores the entire dataset. During prediction, it calculates distances and selects the majority class among the neighbors.
+      </p>
+      <p><strong>Use Cases:</strong> Recommender systems, handwriting detection, image recognition.</p>
+      <p><strong>Advantages:</strong> Simple to implement, no training needed, effective with sufficient data.</p>
+      <p><strong>Limitations:</strong> Slow with large datasets, sensitive to irrelevant features and scaling.</p>
+
+      <h2>5. Support Vector Machines (SVM)</h2>
+      <p>
+        SVMs are supervised learning models used for classification and regression tasks. They work by finding the optimal hyperplane that separates data points of different classes with the maximum margin.
+      </p>
+      <p>
+        SVMs can handle non-linear data using kernel tricks such as polynomial and RBF kernels, making them flexible for complex datasets.
+      </p>
+      <p><strong>Use Cases:</strong> Face detection, sentiment analysis, text categorization.</p>
+      <p><strong>Advantages:</strong> High accuracy, effective in high-dimensional spaces, robust to overfitting.</p>
+      <p><strong>Limitations:</strong> Computationally intensive, hard to interpret results.</p>
+
+      <hr />
+      <h2>Conclusion</h2>
+      <p>
+        These five machine learning algorithms provide a strong starting point for anyone beginning their journey in AI and data science. Understanding their underlying mechanics and strengths helps in selecting the right model for your problem. Whether you're developing predictive models or classification systems, mastering these techniques will set a solid foundation.
+      </p>
+      <p>
+        As you progress, consider exploring ensemble methods like Random Forest and Gradient Boosting, as well as deep learning techniques that extend the capabilities of traditional ML models.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Ritika's Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyrights &#169; ritikasportfolio.com | All rights reserved
+    </div>
+  </footer>
+</body>
+</html>
